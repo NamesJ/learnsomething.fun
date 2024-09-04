@@ -9,10 +9,11 @@
     --light-secondary-color: #829494;
 
 
-    --brown-accent-color: #8c4a32
+    --brown-accent-color: #8c4a32;
     --yellow-accent-color: #dd812b;
     --red-accent-color: #8c4a32;
     --green-accent-color: #366b79;
+    --light-blue: #4e98a4;
 }
 
 .courgette-regular {
@@ -26,12 +27,12 @@ body {
     margin: 0;
     padding: 0;
     color: var(--dark-primary-color);
-    background-color: var(--light-primary-color);
+    background-color: var(--light-blue);
 }
 
 header {
-    //background-color: var(--light-secondary-color);
-    color: var(--green-accent-color);
+    //background-color: #edd3b3;
+    color: #edd3b3;
     padding: 20px;
     text-align: center;
 }
@@ -49,8 +50,8 @@ h2 {
 section {
     display: flex;
     align-items: center;
-    padding: 20px;
-    margin: 20px;
+    padding: 40px;
+    margin: 50px 40px;
     background-color: var(--light-primary-color);
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -75,6 +76,7 @@ section.reverse .text {
     flex: 1;
     display: flex;  /* ensures centered vertically */
     justify-content: center; /* center image horizontally */
+    align
 }
 
 .image img {
@@ -84,11 +86,29 @@ section.reverse .text {
     object-fit: cover; /* ensure the image covers the container while maintaining aspect ratio */
 }
 
-.testimonial {
-    margin-bottom: 15px;
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
 }
 
-section#contact {
+.testimonial {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadows: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.testimonial:nth-of-type(even) .text {
+    text-align: right; /* Aligns text to the right in reversed sections */
+}
+
+section:last-of-type {
     margin-bottom: 80px
 }
 
