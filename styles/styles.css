@@ -1,0 +1,112 @@
+:root {
+    --dark-primary-color: #202628;
+    --dark-secondary-color: #202628;
+
+    //--light-primary-color: #ebd2b3;
+    --light-primary-color: #edd3b3;
+    //--light-secondary-color: #b98f5e;
+    //--light-secondary-color: #b98f5e;
+    --light-secondary-color: #829494;
+
+
+    --brown-accent-color: #8c4a32
+    --yellow-accent-color: #dd812b;
+    --red-accent-color: #8c4a32;
+    --green-accent-color: #366b79;
+}
+
+.courgette-regular {
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--dark-primary-color);
+    background-color: var(--light-primary-color);
+}
+
+header {
+    //background-color: var(--light-secondary-color);
+    color: var(--green-accent-color);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    color: var(--green-accent-color);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--light-primary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hideen; /* ensure any overflowing image content is clipped */
+}
+
+section.reverse {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 3;
+    padding: 20px 20px 20px 5%;
+}
+
+section.reverse .text {
+    text-align: right; /* align text to the right for reversed sections */
+    padding: 20px 5% 20px 20px;
+}
+
+.image {
+    flex: 1;
+    display: flex;  /* ensures centered vertically */
+    justify-content: center; /* center image horizontally */
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* ensure the image covers the container while maintaining aspect ratio */
+}
+
+.testimonial {
+    margin-bottom: 15px;
+}
+
+section#contact {
+    margin-bottom: 80px
+}
+
+.contact-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--yellow-accent-color);
+    color: var(--dark-primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--dark-primary-color);
+    color: var(--green-accent-color);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
