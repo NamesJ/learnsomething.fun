@@ -58,7 +58,7 @@ section {
     overflow: hideen; /* ensure any overflowing image content is clipped */
 }
 
-section.reverse {
+section:nth-of-type(even) {
     flex-direction: row-reverse;
 }
 
@@ -67,7 +67,7 @@ section.reverse {
     padding: 20px 20px 20px 5%;
 }
 
-section.reverse .text {
+section:nth-of-type(even) .text {
     text-align: right; /* align text to the right for reversed sections */
     padding: 20px 5% 20px 20px;
 }
@@ -100,11 +100,11 @@ section.reverse .text {
     box-shadows: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.testimonial:nth-of-type(even) {
+.testimonial:nth-of-type(odd) {
     flex-direction: row-reverse;
 }
 
-.testimonial:nth-of-type(even) .text {
+.testimonial:nth-of-type(odd) .text {
     text-align: right; /* Aligns text to the right in reversed sections */
 }
 
