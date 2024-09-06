@@ -51,7 +51,7 @@ section {
     display: flex;
     align-items: center;
     padding: 40px;
-    margin: 50px 40px;
+    margin: 15px 40px 35px 40px;
     background-color: var(--light-primary-color);
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
