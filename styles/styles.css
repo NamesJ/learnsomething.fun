@@ -33,7 +33,7 @@ body {
 header {
     //background-color: #edd3b3;
     color: #edd3b3;
-    padding: 20px;
+    padding: 20px 20px 5px 20px;
     text-align: center;
 }
 
@@ -73,17 +73,13 @@ section:nth-of-type(even) .text {
 }
 
 .image {
-    flex: 1;
-    display: flex;  /* ensures centered vertically */
-    justify-content: center; /* center image horizontally */
-    align
+    flex: 2;
 }
 
 .image img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    object-fit: cover; /* ensure the image covers the container while maintaining aspect ratio */
 }
 
 .testimonial-container {
@@ -129,4 +125,43 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section > .image {
+        display: none;
+    }
+
+    .text, .image {
+        width: 100%;
+        padding: 10px; /* Adjust padding as needed */
+    }
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px; /* space between image and text */
+    }
+
+    section:nth-of-type(even) .text {
+        text-align: center; /* Center text in reversed sections */
+    }
+
+    .testimonial {
+        padding: 0px;
+    }
+
+    .testimonial .text {
+        text-align: start;
+    }
+
+    .testimonial .image {
+        display: none;
+    }
 }
