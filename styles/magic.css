@@ -1,0 +1,13 @@
+/* Styling for each trail element */
+.trail {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(52, 152, 219, 0.6); /* Customize the color */
+    pointer-events: none; /* Allows clicks through the trail */
+    z-index: 1000; /* Position above other elements */
+    will-change: transform; /* Improve performance */
+    transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+  }
+  
