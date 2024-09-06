@@ -33,10 +33,22 @@ about those things run the \`help()\` function by typing 'help()' and then press
 Contact us if you'd like to learn more about how this website works, how to build your own, and much, much more!`);
 }
 
+function openContactForm() {
+    $('#contact').find('a').attr('href');
+}
+
 function help() {
     console.log(`Here are a few things to try out:
 
-cursorTrail(): Adds a trail effect to your cursor`);
+Fully implemented (try it out!):
+    cursorTrail(): Adds a trail effect to your cursor
+    openContactForm(): open the contact form in a new tab
+
+Coming soon (?):
+    Dork: object for a Zork-like game, but worse, but hackable!
+    nightmareMode(): I don't know what this will be, but it WILL BE!
+    Graphix: basic graphics
+    YouTellMe: no really, you tell me. What do you think would be cool? Let me know by calling \`openContactForm()\``);
 }
 
 // Event handler for updating the mouseX, and mouseY variables
