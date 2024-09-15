@@ -1,0 +1,5 @@
+#particles-js {
+    position: absolute;
+    background-color: #1a1a1a; /* The background color */
+    z-index: -1; /* Keep it behind the content */
+}
